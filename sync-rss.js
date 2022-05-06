@@ -25,13 +25,13 @@ const CATEGORY = {
   game: 'game',
   drama: 'drama',
 };
-const EMOJI = {
-  movie: '🎞',
-  music: '🎶',
-  book: '📖',
-  game: '🕹',
-  drama: '💃🏻',
-};
+// const EMOJI = {
+//   movie: '🎞',
+//   music: '🎶',
+//   book: '📖',
+//   game: '🕹',
+//   drama: '💃🏻',
+// };
 
 const DOUBAN_USER_ID = process.env.DOUBAN_USER_ID;
 const notion = new Client({
@@ -423,10 +423,10 @@ async function addToNotion(itemData, category) {
       parent: {
         database_id: dbid,
       },
-      icon: {
-        type: 'emoji',
-        emoji: EMOJI[category],
-      },
+      // icon: {
+      //   type: 'emoji',
+      //   emoji: EMOJI[category],
+      // },
       // fill in properties by the format: https://developers.notion.com/reference/page#page-property-value
       properties,
     };
