@@ -26,9 +26,11 @@ const CATEGORY = {
   drama: 'drama',
 };
 const EMOJI = {
-  movie: '',
-  music: '',
-  book: '',
+  movie: '🎞',
+  music: '🎶',
+  book: '📖',
+  game: '🕹',
+  drama: '💃🏻',
 };
 
 const DOUBAN_USER_ID = process.env.DOUBAN_USER_ID;
